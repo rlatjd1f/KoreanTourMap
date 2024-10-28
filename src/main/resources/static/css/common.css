@@ -1,0 +1,49 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*display: flex;*/
+}
+
+/* 부모 컨테이너 */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* 각 영역 */
+.map.image {
+    width: 100%;
+    height: 100%;
+    flex: 7;
+    border: 1px solid gray;
+}
+
+.map.search {
+    flex: 3;
+    border: 1px solid gray;
+}
+
+.map.search p {
+    text-align: center;
+    font-family: 'SBAggroB', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em
+}
+
+
+/*폰트 정보*/
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

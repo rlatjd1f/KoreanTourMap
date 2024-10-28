@@ -12,6 +12,6 @@ public class MapController {
     @GetMapping("/map")
     public String showMap() {
         log.info("showMap() called");
-        return "map";
+        return "map/map";
     }
 }
