@@ -19,7 +19,7 @@ function initializeMap() {
     kakao.maps.load(function () {
         var mapContainer = document.getElementById('map'),
             mapOption = {
-                center: new kakao.maps.LatLng(36.6003524473678, 127.981361714912),
+                center: new kakao.maps.LatLng(36.3003524473678, 127.981361714912),
                 level: 12
             };
 
