@@ -2,35 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style>
-        /*head, body 가운데 정렬 스타일 생성*/
-        head, body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .center-container {
-            text-align: center;
-            padding: 20px;
-            margin-top: 100px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
     <title>국내 여행/축제 알리미</title>
+    <link rel="stylesheet" href="/css/common.css">
 </head>
 <body>
-<div class="center-container">
-    <p>여행지와 축제정보를 알려주는 사이트입니다.</p>
+<div class="container main" style="align-content: center">
+    <div class="image-gallery">
+        <img src="img/earth.png" alt="earth">
+        <img src="img/festival.png" alt="earth">
+        <img src="img/food.png" alt="earth">
+        <img src="img/hotel.png" alt="earth">
+    </div>
+    <p>여행지, 축제, 숙소 정보를 한번에!</p>
+    <button onclick="location.href='/map'">서비스 이동하기</button>
 </div>
-<div>
-    <button onclick="location.href='/map'">지도 이동하기</button>
-</div>
-
 </body>
 </html>
