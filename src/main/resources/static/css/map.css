@@ -1,12 +1,63 @@
 /* 부모 컨테이너 */
 .container.map {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-#map {
+.map.header {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    background-color: wheat;
+    border: 1px solid gray;
+    align-items: center;
+}
+
+.map.header p {
+    font-family: 'SBAggroB', sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 1.6em;
+}
+
+.search-container {
+    position: relative;
+    width: 400px;
+}
+
+.search-container input {
+    width: 100%;
+    margin-left: 50px;
+    padding: 10px 30px 10px 30px;
+    font-size: 1.2em;
+    font-family: 'NanumBarunGothic', sans-serif;
+    text-align: left;
+    border-radius: 50px;
+    border: 1px solid black;
+
+}
+
+.search-container button {
+    position: absolute;
+    right: -90px;
+    top: 60%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-container img {
+    width: 30px;
+    height: 30px;
+}
+
+.map.content {
+    display: flex;
+    flex: 15;
     width: 100%;
     height: 100%;
 }
@@ -15,7 +66,7 @@
 .map.image {
     width: 100%;
     height: 100%;
-    flex: 5.5;
+    flex: 1;
     border: 1px solid gray;
     position: relative;
     display: block;
@@ -39,7 +90,7 @@
 }
 
 .map.search {
-    flex: 4.5;
+    flex: 1;
     border: 1px solid gray;
 }
 
@@ -48,4 +99,15 @@
     font-family: 'SBAggroB', sans-serif;
     font-weight: bold;
     font-size: 2.5em
+}
+
+
+
+
+.icon {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    gap: 40px;
+    margin-bottom: 10px;
+    width: 50px;
 }

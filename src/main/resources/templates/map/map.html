@@ -11,12 +11,23 @@
 <script type="module" src="/js/map.js"></script>
 
 <div class="container map">
-    <div class="map search">
-        <p>지도 정보</p>
+    <div class="map header">
+        <p>국내 여행/축제 정보</p>
+        <div class="search-container">
+            <label for="search"></label><input type="text" id="search" placeholder="검색" maxlength="20">
+            <button type="submit" class="search-button">
+                <img class="icon" src="img/search.png" alt="검색">
+            </button>
+        </div>
     </div>
-    <div class="map image" id="map">
-        <div class="map image panel">
-            <p>TEST</p>
+    <div class="map content">
+        <div class="map search">
+            <p>축제 일정</p>
+        </div>
+        <div class="map image" id="map">
+            <div class="map image panel">
+                <p>TEST</p>
+            </div>
         </div>
     </div>
 </div>
