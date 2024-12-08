@@ -27,7 +27,18 @@ function initializeMap() {
     });
 }
 
+function getFestivalInfo() {
+    return fetch('/mapLoad')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to get festival info');
+            }
+            return response.json();
+        });
+}
+
 // 스크립트를 로드하고, 로드가 완료된 후 지도를 초기화
 loadKakaoMapScript()
     .then(initializeMap)
+    .then(getFestivalInfo)
     .catch(error => console.error(error));
